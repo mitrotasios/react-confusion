@@ -149,6 +149,15 @@ const DishDetail = (props) => {
             </div>
         );
     }
+    else if (props.errMess) {
+        return(
+            <div className="container">
+                <div className="row">
+                    <h4>{props.errMess}</h4>
+                </div>
+            </div>
+        );
+    }
     if (props.dish!=null) {
         return(
             <div className="container">
