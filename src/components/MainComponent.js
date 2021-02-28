@@ -53,7 +53,7 @@ class Main extends Component {
                 dishesErrMess={this.props.dishes.errMoess}
                 promotion={this.props.promotions.promotions.filter((promo) => promo.featured)[0]} 
                 promosLoading={this.props.promotions.isLoading}
-                promosErrMess={this.props.promotions.errMoess}
+                promosErrMess={this.props.promotions.errMess}
                 leader={this.props.leaders.filter((leader) => leader.featured)[0]}/>
         );
     }
@@ -64,7 +64,7 @@ class Main extends Component {
                 isLoading={this.props.dishes.isLoading}
                 errMess={this.props.dishes.errMoess}
                 comments={this.props.comments.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
-                commentsErrMess={this.props.comments.errMoess}
+                commentsErrMess={this.props.comments.errMess}
                 addComment={this.props.addComment}
                 />
         )
