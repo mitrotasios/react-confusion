@@ -1,5 +1,3 @@
-import { LEADERS } from '../shared/leaders';
-
 import * as ActionTypes from './ActionTypes';
 
 var defaultState = { isLoading: true,
